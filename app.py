@@ -26,7 +26,8 @@ import json
 #country_list = df['CountryName'].tolist()
 
 def load_data():
-    url = "http://127.0.0.1:8000/api/numbeo/costs/"
+    #url = "http://127.0.0.1:8002/api/numbeo/costs/"
+    url = "http://35.221.135.250:8002/api/numbeo/costs/"
     response = requests.get(url)
     if response.status_code == 200:
         posts_data = response.json()
